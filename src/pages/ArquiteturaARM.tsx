@@ -10,7 +10,28 @@ export default function ArquiteturaARM() {
       difficulty="intermediario"
       timeToRead="14 min"
     >
-      <h2>História e Filosofia ARM</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"ARM"}</strong> {' — '} {"arquitetura RISC dominante em mobile e crescente em desktop."}
+          </li>
+        <li>
+            <strong>{"Apple Silicon"}</strong> {' — '} {"M1/M2/M3 baseados em ARM com performance/Watt excelente."}
+          </li>
+        <li>
+            <strong>{"big.LITTLE"}</strong> {' — '} {"combina cores potentes e cores eficientes no mesmo chip."}
+          </li>
+        <li>
+            <strong>{"SoC"}</strong> {' — '} {"System on Chip — CPU+GPU+modem integrados."}
+          </li>
+        <li>
+            <strong>{"Licenciamento"}</strong> {' — '} {"ARM vende design; Qualcomm, Apple, Samsung fabricam."}
+          </li>
+        </ul>
+        <h2>História e Filosofia ARM</h2>
       <p>
         A ARM Holdings foi fundada em 1990 como joint venture entre Acorn, Apple e VLSI Technology. Diferente da Intel, a ARM não fabrica chips — ela desenvolve a ISA e designs de núcleo e <strong>licencia</strong> para fabricantes (Apple, Qualcomm, Samsung, NVIDIA, etc.).
       </p>

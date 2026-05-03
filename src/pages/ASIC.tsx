@@ -10,7 +10,28 @@ export default function ASIC() {
       difficulty="avancado"
       timeToRead="12 min"
     >
-      <h2>O que é um ASIC?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"ASIC"}</strong> {' — '} {"Application-Specific Integrated Circuit — chip feito para uma tarefa."}
+          </li>
+        <li>
+            <strong>{"Vantagem"}</strong> {' — '} {"performance e eficiência energética imbatíveis para a tarefa-alvo."}
+          </li>
+        <li>
+            <strong>{"Desvantagem"}</strong> {' — '} {"custo de design altíssimo; sem flexibilidade."}
+          </li>
+        <li>
+            <strong>{"Exemplos"}</strong> {' — '} {"mineradores Bitcoin, TPU do Google, chips de redes neurais."}
+          </li>
+        <li>
+            <strong>{"vs FPGA"}</strong> {' — '} {"ASIC é fixo; FPGA é reprogramável."}
+          </li>
+        </ul>
+        <h2>O que é um ASIC?</h2>
       <p>
         Um ASIC (Application-Specific Integrated Circuit) é um chip projetado e fabricado para uma função específica e única. Diferente de CPUs (propósito geral) e FPGAs (programáveis), ASICs são otimizados ao máximo para sua função — resultando em máxima eficiência de energia e performance por área, mas sem flexibilidade.
       </p>

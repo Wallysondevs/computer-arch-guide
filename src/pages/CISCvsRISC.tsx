@@ -10,7 +10,28 @@ export default function CISCvsRISC() {
       difficulty="intermediario"
       timeToRead="14 min"
     >
-      <h2>O Debate Histórico</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"CISC"}</strong> {' — '} {"Complex Instruction Set — instruções poderosas e variadas (x86)."}
+          </li>
+        <li>
+            <strong>{"RISC"}</strong> {' — '} {"Reduced Instruction Set — instruções simples e uniformes (ARM, RISC-V)."}
+          </li>
+        <li>
+            <strong>{"Pipeline"}</strong> {' — '} {"RISC facilita pipelining; CISC sofre."}
+          </li>
+        <li>
+            <strong>{"Microcódigo"}</strong> {' — '} {"x86 moderno traduz CISC em micro-ops RISC internamente."}
+          </li>
+        <li>
+            <strong>{"Convergência"}</strong> {' — '} {"linha entre CISC e RISC ficou borrada nas implementações modernas."}
+          </li>
+        </ul>
+        <h2>O Debate Histórico</h2>
       <p>
         Na década de 1980, surgiu um debate fundamental sobre como projetar processadores eficientes. De um lado, a filosofia CISC (Complex Instruction Set Computer); do outro, a RISC (Reduced Instruction Set Computer).
       </p>

@@ -10,7 +10,28 @@ export default function FPGA() {
       difficulty="avancado"
       timeToRead="14 min"
     >
-      <h2>O que é um FPGA?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"FPGA"}</strong> {' — '} {"Field-Programmable Gate Array — circuito reconfigurável."}
+          </li>
+        <li>
+            <strong>{"LUT"}</strong> {' — '} {"Look-Up Table — bloco lógico programável."}
+          </li>
+        <li>
+            <strong>{"HDL"}</strong> {' — '} {"linguagens como Verilog e VHDL descrevem o hardware."}
+          </li>
+        <li>
+            <strong>{"Vantagem"}</strong> {' — '} {"prototipagem e nichos onde ASIC não compensa."}
+          </li>
+        <li>
+            <strong>{"Aplicações"}</strong> {' — '} {"telecom, finanças (HFT), aceleração de IA, prototipagem."}
+          </li>
+        </ul>
+        <h2>O que é um FPGA?</h2>
       <p>
         Um FPGA (Field-Programmable Gate Array) é um chip que contém milhões de blocos lógicos, memórias e interconexões programáveis. Diferente de um CPU (software programa o comportamento) ou ASIC (hardware fixo na fábrica), um FPGA pode ser configurado e reconfigurado para implementar qualquer circuito digital.
       </p>

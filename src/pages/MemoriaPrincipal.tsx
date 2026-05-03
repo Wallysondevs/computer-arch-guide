@@ -10,7 +10,28 @@ export default function MemoriaPrincipal() {
       difficulty="intermediario"
       timeToRead="14 min"
     >
-      <h2>DRAM vs SRAM</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"DRAM"}</strong> {' — '} {"RAM dinâmica — barata, precisa refresh, mais lenta."}
+          </li>
+        <li>
+            <strong>{"SRAM"}</strong> {' — '} {"RAM estática — rápida, cara, usada em cache."}
+          </li>
+        <li>
+            <strong>{"DDR"}</strong> {' — '} {"Double Data Rate — DDR4, DDR5 são padrões atuais."}
+          </li>
+        <li>
+            <strong>{"Latência vs banda"}</strong> {' — '} {"CAS latency e GB/s, ambas importam."}
+          </li>
+        <li>
+            <strong>{"ECC"}</strong> {' — '} {"Error-Correcting Code — corrige bits virados (servidores)."}
+          </li>
+        </ul>
+        <h2>DRAM vs SRAM</h2>
       <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
         {[
           { type: "SRAM (Static RAM)", cells: "6 transistores/bit", refresh: "Não precisa", speed: "1-5 ns", density: "Baixa", cost: "Alta (~$1000/GB)", use: "Cache L1/L2/L3 da CPU" },

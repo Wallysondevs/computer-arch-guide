@@ -10,7 +10,28 @@ export default function MemoriaVirtual() {
       difficulty="avancado"
       timeToRead="16 min"
     >
-      <h2>O Problema da Memória Real</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"VM"}</strong> {' — '} {"Virtual Memory — cada processo vê seu próprio espaço."}
+          </li>
+        <li>
+            <strong>{"Página"}</strong> {' — '} {"unidade típica de 4KB."}
+          </li>
+        <li>
+            <strong>{"Page table"}</strong> {' — '} {"mapeia virtual → físico."}
+          </li>
+        <li>
+            <strong>{"TLB"}</strong> {' — '} {"Translation Lookaside Buffer — cache da page table."}
+          </li>
+        <li>
+            <strong>{"Swap"}</strong> {' — '} {"páginas frias vão pra disco."}
+          </li>
+        </ul>
+        <h2>O Problema da Memória Real</h2>
       <p>
         Sem memória virtual, cada programa precisaria saber exatamente onde na RAM física seus dados estão — impossível quando múltiplos programas rodam simultaneamente. A memória virtual resolve isso criando uma abstração: cada processo vê seu próprio espaço de endereçamento privado, traduzido para endereços físicos pelo hardware.
       </p>

@@ -10,7 +10,28 @@ export default function NPUTPU() {
       difficulty="avancado"
       timeToRead="14 min"
     >
-      <h2>Por que Aceleradores de IA?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"NPU"}</strong> {' — '} {"Neural Processing Unit — acelerador de IA em SoCs móveis."}
+          </li>
+        <li>
+            <strong>{"TPU"}</strong> {' — '} {"Tensor Processing Unit — ASIC do Google para TensorFlow."}
+          </li>
+        <li>
+            <strong>{"Operação central"}</strong> {' — '} {"multiplicação matriz-matriz (GEMM) e convolução."}
+          </li>
+        <li>
+            <strong>{"Precisão reduzida"}</strong> {' — '} {"int8, fp16, bf16 economizam energia."}
+          </li>
+        <li>
+            <strong>{"Edge AI"}</strong> {' — '} {"inferência local sem cloud."}
+          </li>
+        </ul>
+        <h2>Por que Aceleradores de IA?</h2>
       <p>
         Redes neurais são essencialmente multiplicação de matrizes em escala massiva. Uma única forward pass de um LLM como GPT-3 (175B parâmetros) envolve trilhões de operações de multiplicação-acumulação (MAC). CPUs e GPUs de propósito geral são ineficientes para isso — NPUs e TPUs são projetados especificamente para essas operações.
       </p>

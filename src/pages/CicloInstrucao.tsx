@@ -10,7 +10,28 @@ export default function CicloInstrucao() {
       difficulty="intermediario"
       timeToRead="12 min"
     >
-      <h2>O Ciclo de Instrução</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Fetch"}</strong> {' — '} {"busca instrução na memória."}
+          </li>
+        <li>
+            <strong>{"Decode"}</strong> {' — '} {"interpreta o opcode."}
+          </li>
+        <li>
+            <strong>{"Execute"}</strong> {' — '} {"realiza a operação."}
+          </li>
+        <li>
+            <strong>{"Memory access"}</strong> {' — '} {"lê/escreve dado se necessário."}
+          </li>
+        <li>
+            <strong>{"Writeback"}</strong> {' — '} {"grava resultado em registrador."}
+          </li>
+        </ul>
+        <h2>O Ciclo de Instrução</h2>
       <p>
         Toda instrução passa por um conjunto de etapas que formam o ciclo de instrução. Em arquiteturas clássicas, essas etapas ocorrem sequencialmente. Em CPUs modernas com pipeline, ocorrem em paralelo para diferentes instruções.
       </p>

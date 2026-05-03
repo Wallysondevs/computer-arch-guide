@@ -10,7 +10,28 @@ export default function SoC() {
       difficulty="intermediario"
       timeToRead="13 min"
     >
-      <h2>O que é um SoC?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"SoC"}</strong> {' — '} {"System on Chip — CPU+GPU+modem+ISP em um chip."}
+          </li>
+        <li>
+            <strong>{"Vantagens"}</strong> {' — '} {"menor área, menos energia, menor latência."}
+          </li>
+        <li>
+            <strong>{"Exemplos"}</strong> {' — '} {"Snapdragon, Apple Silicon, Tegra, Exynos."}
+          </li>
+        <li>
+            <strong>{"Mobile-first"}</strong> {' — '} {"padrão em smartphones e tablets."}
+          </li>
+        <li>
+            <strong>{"Desktop"}</strong> {' — '} {"Apple M1/M2 trouxe SoC ao laptop/desktop."}
+          </li>
+        </ul>
+        <h2>O que é um SoC?</h2>
       <p>
         Um SoC (System on Chip) integra todos os componentes principais de um sistema de computação em um único chip de silício: CPU, GPU, memória controladora, NPU, codecs de vídeo, modem, controladores de I/O — tudo em um die ou em um pacote multichip.
       </p>

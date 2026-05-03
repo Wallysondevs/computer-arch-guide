@@ -10,7 +10,28 @@ export default function NUMA() {
       difficulty="avancado"
       timeToRead="13 min"
     >
-      <h2>O Problema do Acesso Uniforme</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"NUMA"}</strong> {' — '} {"Non-Uniform Memory Access — cada CPU tem RAM mais próxima."}
+          </li>
+        <li>
+            <strong>{"Local vs remoto"}</strong> {' — '} {"acesso local mais rápido que remoto."}
+          </li>
+        <li>
+            <strong>{"Affinity"}</strong> {' — '} {"threads atadas a nós NUMA específicos."}
+          </li>
+        <li>
+            <strong>{"Servidores"}</strong> {' — '} {"padrão em multi-socket Xeon/EPYC."}
+          </li>
+        <li>
+            <strong>{"NUMA-aware"}</strong> {' — '} {"SO e DB modernos otimizam para isso."}
+          </li>
+        </ul>
+        <h2>O Problema do Acesso Uniforme</h2>
       <p>
         Em sistemas com múltiplos processadores (soquetes), conectar todos os CPUs a uma única memória compartilhada cria um gargalo enorme. A solução é distribuir a memória — cada CPU tem sua própria memória local, mas pode acessar a memória dos outros CPUs através de interconexões. Isso é <strong>NUMA</strong>.
       </p>

@@ -10,7 +10,28 @@ export default function AlgebraBooleana() {
       difficulty="iniciante"
       timeToRead="12 min"
     >
-      <h2>O que é Álgebra Booleana?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Booleana"}</strong> {' — '} {"álgebra de dois valores: 0 e 1 — base dos circuitos digitais."}
+          </li>
+        <li>
+            <strong>{"AND"}</strong> {' — '} {"saída 1 só se todas as entradas forem 1."}
+          </li>
+        <li>
+            <strong>{"OR"}</strong> {' — '} {"saída 1 se pelo menos uma entrada for 1."}
+          </li>
+        <li>
+            <strong>{"NOT"}</strong> {' — '} {"inverte a entrada (0→1, 1→0)."}
+          </li>
+        <li>
+            <strong>{"NAND/NOR"}</strong> {' — '} {"portas universais — qualquer circuito pode ser feito só com elas."}
+          </li>
+        </ul>
+        <h2>O que é Álgebra Booleana?</h2>
       <p>
         Desenvolvida por George Boole em 1854, a álgebra booleana trabalha apenas com dois valores: verdadeiro (1) e falso (0). É a fundação matemática de todos os circuitos digitais.
       </p>

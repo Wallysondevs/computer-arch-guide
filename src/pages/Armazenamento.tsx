@@ -10,7 +10,28 @@ export default function Armazenamento() {
       difficulty="intermediario"
       timeToRead="13 min"
     >
-      <h2>HDD — Hard Disk Drive</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"HDD"}</strong> {' — '} {"disco magnético rotacional — barato, lento, mecânico."}
+          </li>
+        <li>
+            <strong>{"SSD"}</strong> {' — '} {"memória flash sem partes móveis — rápido e silencioso."}
+          </li>
+        <li>
+            <strong>{"NVMe"}</strong> {' — '} {"protocolo SSD via PCIe — muito mais rápido que SATA."}
+          </li>
+        <li>
+            <strong>{"RAID"}</strong> {' — '} {"combinação de discos para velocidade ou redundância."}
+          </li>
+        <li>
+            <strong>{"Hierarquia"}</strong> {' — '} {"registradores → cache → RAM → SSD → HDD → tape."}
+          </li>
+        </ul>
+        <h2>HDD — Hard Disk Drive</h2>
       <p>
         HDDs armazenam dados magneticamente em discos rotativos (pratos). Um braço mecânico posiciona a cabeça de leitura/escrita sobre a trilha correta:
       </p>

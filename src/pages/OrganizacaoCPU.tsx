@@ -10,7 +10,28 @@ export default function OrganizacaoCPU() {
       difficulty="intermediario"
       timeToRead="15 min"
     >
-      <h2>A Unidade Central de Processamento</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Datapath"}</strong> {' — '} {"caminho físico dos dados (registradores, ALU, buses)."}
+          </li>
+        <li>
+            <strong>{"Control unit"}</strong> {' — '} {"gera sinais que coordenam o datapath."}
+          </li>
+        <li>
+            <strong>{"Registradores"}</strong> {' — '} {"memória mais rápida — diretamente nas instruções."}
+          </li>
+        <li>
+            <strong>{"ALU"}</strong> {' — '} {"executa operações aritméticas/lógicas."}
+          </li>
+        <li>
+            <strong>{"Pipeline"}</strong> {' — '} {"divide ciclo de instrução em estágios paralelos."}
+          </li>
+        </ul>
+        <h2>A Unidade Central de Processamento</h2>
       <p>
         A CPU é o "cérebro" do computador. Ela busca instruções na memória, as decodifica e executa. Os componentes principais de uma CPU clássica são: Unidade de Controle, ALU, e banco de registradores — todos conectados por barramentos internos.
       </p>

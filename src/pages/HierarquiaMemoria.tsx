@@ -9,7 +9,28 @@ export default function HierarquiaMemoria() {
       difficulty="intermediario"
       timeToRead="12 min"
     >
-      <h2>O Problema Fundamental</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Hierarquia"}</strong> {' — '} {"registradores → L1 → L2 → L3 → RAM → SSD → HDD."}
+          </li>
+        <li>
+            <strong>{"Trade-off"}</strong> {' — '} {"velocidade vs capacidade vs custo."}
+          </li>
+        <li>
+            <strong>{"Localidade"}</strong> {' — '} {"temporal (reuso) e espacial (vizinhança) guiam o design."}
+          </li>
+        <li>
+            <strong>{"Working set"}</strong> {' — '} {"dados ativos do programa."}
+          </li>
+        <li>
+            <strong>{"Thrashing"}</strong> {' — '} {"quando working set não cabe e tudo vai pra disco."}
+          </li>
+        </ul>
+        <h2>O Problema Fundamental</h2>
       <p>
         Existe uma contradição central no design de memória: memória <em>rápida</em> é cara e pequena; memória <em>barata</em> é lenta e grande. Nenhuma tecnologia única resolve esse dilema. A solução é criar uma <strong>hierarquia</strong> de diferentes tipos de memória, cada um com seu custo-benefício.
       </p>

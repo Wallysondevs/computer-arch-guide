@@ -10,7 +10,28 @@ export default function RISCV() {
       difficulty="intermediario"
       timeToRead="13 min"
     >
-      <h2>O que é RISC-V?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"RISC-V"}</strong> {' — '} {"ISA aberta e gratuita — sem royalties."}
+          </li>
+        <li>
+            <strong>{"Modular"}</strong> {' — '} {"RV32I/RV64I + extensões M, A, F, D, C, V."}
+          </li>
+        <li>
+            <strong>{"Adoção"}</strong> {' — '} {"Western Digital, Alibaba, NASA, SiFive, e crescendo."}
+          </li>
+        <li>
+            <strong>{"Ecossistema"}</strong> {' — '} {"GCC, LLVM, Linux já portados."}
+          </li>
+        <li>
+            <strong>{"Perspectiva"}</strong> {' — '} {"potencial para quebrar duopólio x86/ARM."}
+          </li>
+        </ul>
+        <h2>O que é RISC-V?</h2>
       <p>
         RISC-V (pronunciado "risk five") é uma ISA open-source criada em 2010 na UC Berkeley por Andrew Waterman, Yunsup Lee e David Patterson. Ao contrário de x86 (Intel) e ARM (ARM Holdings), RISC-V é completamente livre de royalties — qualquer um pode implementar, modificar e vender produtos baseados nela.
       </p>

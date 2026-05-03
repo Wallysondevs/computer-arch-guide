@@ -10,7 +10,28 @@ export default function ModosEnderecamento() {
       difficulty="intermediario"
       timeToRead="12 min"
     >
-      <h2>Por que Existem Múltiplos Modos?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Imediato"}</strong> {' — '} {"operando dentro da própria instrução."}
+          </li>
+        <li>
+            <strong>{"Direto"}</strong> {' — '} {"endereço dado explicitamente."}
+          </li>
+        <li>
+            <strong>{"Indireto"}</strong> {' — '} {"endereço guardado em registrador/memória."}
+          </li>
+        <li>
+            <strong>{"Indexado"}</strong> {' — '} {"base + deslocamento — útil para arrays."}
+          </li>
+        <li>
+            <strong>{"PC-relativo"}</strong> {' — '} {"offset relativo ao Program Counter — comum em branches."}
+          </li>
+        </ul>
+        <h2>Por que Existem Múltiplos Modos?</h2>
       <p>
         Modos de endereçamento definem como o endereço efetivo de um operando é calculado. Diferentes situações exigem acesso a dados em diferentes locais: dentro da instrução, em registradores, em posições fixas ou calculadas de memória.
       </p>

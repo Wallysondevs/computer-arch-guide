@@ -10,7 +10,28 @@ export default function ArquiteturaX86() {
       difficulty="intermediario"
       timeToRead="15 min"
     >
-      <h2>Uma Breve História do x86</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"x86"}</strong> {' — '} {"arquitetura CISC criada pela Intel em 1978 (8086)."}
+          </li>
+        <li>
+            <strong>{"x86_64"}</strong> {' — '} {"extensão 64 bits criada pela AMD (AMD64), adotada por todos."}
+          </li>
+        <li>
+            <strong>{"Modos"}</strong> {' — '} {"real, protegido, longo (long mode) — 16/32/64 bits."}
+          </li>
+        <li>
+            <strong>{"Microcódigo"}</strong> {' — '} {"tradução interna de instruções CISC para micro-ops RISC-like."}
+          </li>
+        <li>
+            <strong>{"Compatibilidade"}</strong> {' — '} {"décadas de retrocompatibilidade — peso histórico."}
+          </li>
+        </ul>
+        <h2>Uma Breve História do x86</h2>
       <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
         {[
           { year: "1978", cpu: "Intel 8086", note: "16-bit, 8 registradores de 16-bit, 1 MB de endereçamento" },

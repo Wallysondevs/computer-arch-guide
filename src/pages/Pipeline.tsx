@@ -10,7 +10,28 @@ export default function Pipeline() {
       difficulty="intermediario"
       timeToRead="16 min"
     >
-      <h2>A Ideia do Pipeline</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Pipeline"}</strong> {' — '} {"linha de montagem de instruções."}
+          </li>
+        <li>
+            <strong>{"Estágios"}</strong> {' — '} {"clássicos: IF, ID, EX, MEM, WB."}
+          </li>
+        <li>
+            <strong>{"Hazards"}</strong> {' — '} {"data, control, structural — quebram o fluxo."}
+          </li>
+        <li>
+            <strong>{"Forwarding"}</strong> {' — '} {"antecipa resultado para evitar stall."}
+          </li>
+        <li>
+            <strong>{"Branch prediction"}</strong> {' — '} {"tenta adivinhar para encher o pipeline."}
+          </li>
+        </ul>
+        <h2>A Ideia do Pipeline</h2>
       <p>
         Assim como uma linha de montagem de fábrica processa múltiplos carros simultaneamente em diferentes estágios, um pipeline de CPU processa múltiplas instruções ao mesmo tempo — cada uma em um estágio diferente do ciclo.
       </p>

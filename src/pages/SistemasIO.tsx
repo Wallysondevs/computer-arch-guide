@@ -10,7 +10,28 @@ export default function SistemasIO() {
       difficulty="intermediario"
       timeToRead="13 min"
     >
-      <h2>A Importância do I/O</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"I/O mapeado em memória"}</strong> {' — '} {"periféricos aparecem como endereços."}
+          </li>
+        <li>
+            <strong>{"Port-mapped"}</strong> {' — '} {"instruções IN/OUT específicas (x86 legacy)."}
+          </li>
+        <li>
+            <strong>{"Polling"}</strong> {' — '} {"CPU verifica status repetidamente."}
+          </li>
+        <li>
+            <strong>{"Interrupção"}</strong> {' — '} {"periférico avisa CPU quando pronto."}
+          </li>
+        <li>
+            <strong>{"DMA"}</strong> {' — '} {"transferência sem envolver CPU."}
+          </li>
+        </ul>
+        <h2>A Importância do I/O</h2>
       <p>
         Um computador sem I/O seria inútil — não poderia receber dados do usuário nem exibir resultados. O subsistema de I/O conecta a CPU ao mundo externo: dispositivos de entrada (teclado, mouse, câmera), saída (monitor, impressora, áudio) e armazenamento (SSD, HDD).
       </p>

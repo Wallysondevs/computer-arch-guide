@@ -10,7 +10,28 @@ export default function SIMD() {
       difficulty="avancado"
       timeToRead="14 min"
     >
-      <h2>O que é SIMD?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"SIMD"}</strong> {' — '} {"Single Instruction Multiple Data — vetoriza operações."}
+          </li>
+        <li>
+            <strong>{"SSE/AVX"}</strong> {' — '} {"extensões SIMD da Intel (128/256/512 bits)."}
+          </li>
+        <li>
+            <strong>{"NEON"}</strong> {' — '} {"SIMD da ARM."}
+          </li>
+        <li>
+            <strong>{"Aplicações"}</strong> {' — '} {"multimídia, ciência, IA, criptografia."}
+          </li>
+        <li>
+            <strong>{"Auto-vetorização"}</strong> {' — '} {"compiladores tentam usar SIMD automaticamente."}
+          </li>
+        </ul>
+        <h2>O que é SIMD?</h2>
       <p>
         SIMD (Single Instruction, Multiple Data) permite que uma única instrução opere em múltiplos valores de dados ao mesmo tempo, usando registradores vetoriais. Em vez de somar dois floats, somamos 4, 8, ou 16 floats em um único ciclo.
       </p>

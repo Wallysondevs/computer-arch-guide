@@ -9,7 +9,28 @@ export default function TendenciasFuturo() {
       difficulty="avancado"
       timeToRead="14 min"
     >
-      <h2>O Fim da Lei de Moore?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Chiplets"}</strong> {' — '} {"combina dies pequenos em um package."}
+          </li>
+        <li>
+            <strong>{"3D stacking"}</strong> {' — '} {"empilhamento vertical de circuitos."}
+          </li>
+        <li>
+            <strong>{"Photonics"}</strong> {' — '} {"interconexões ópticas no chip."}
+          </li>
+        <li>
+            <strong>{"Neuromórfico"}</strong> {' — '} {"imita arquitetura cerebral (Loihi, TrueNorth)."}
+          </li>
+        <li>
+            <strong>{"Quantum"}</strong> {' — '} {"distante de uso geral, mas avançando."}
+          </li>
+        </ul>
+        <h2>O Fim da Lei de Moore?</h2>
       <p>
         Gordon Moore observou em 1965 que o número de transistores em um chip dobrava a cada ~2 anos. Por décadas, isso foi uma realidade. Mas as leis da física estão impondo limites:
       </p>

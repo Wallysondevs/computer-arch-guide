@@ -10,7 +10,28 @@ export default function Multicore() {
       difficulty="avancado"
       timeToRead="15 min"
     >
-      <h2>Por que Multicore?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Core"}</strong> {' — '} {"CPU completa em um chip multi-core."}
+          </li>
+        <li>
+            <strong>{"SMP"}</strong> {' — '} {"Symmetric Multi-Processing — todos os cores iguais."}
+          </li>
+        <li>
+            <strong>{"Hyperthreading"}</strong> {' — '} {"2 threads lógicas por core físico."}
+          </li>
+        <li>
+            <strong>{"Coerência de cache"}</strong> {' — '} {"MESI mantém L1/L2 consistentes entre cores."}
+          </li>
+        <li>
+            <strong>{"Amdahl"}</strong> {' — '} {"speedup limitado pela parte sequencial do programa."}
+          </li>
+        </ul>
+        <h2>Por que Multicore?</h2>
       <p>
         Por volta de 2005, o aumento de frequência de clock encontrou uma barreira: a dissipação de calor. A lei de Dennard (transistores menores → mesma potência por área) quebrou. A solução foi dobrar o número de núcleos em vez de aumentar a frequência — cada core a uma frequência menor, consumindo menos energia.
       </p>

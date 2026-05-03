@@ -10,7 +10,28 @@ export default function GPU() {
       difficulty="avancado"
       timeToRead="16 min"
     >
-      <h2>CPU vs GPU: Filosofias Diferentes</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"GPU"}</strong> {' — '} {"Graphics Processing Unit — milhares de cores simples para paralelismo."}
+          </li>
+        <li>
+            <strong>{"CUDA"}</strong> {' — '} {"API NVIDIA para programação paralela."}
+          </li>
+        <li>
+            <strong>{"Shader"}</strong> {' — '} {"programa que roda em cores da GPU."}
+          </li>
+        <li>
+            <strong>{"VRAM"}</strong> {' — '} {"memória dedicada da GPU (GDDR/HBM)."}
+          </li>
+        <li>
+            <strong>{"GPGPU"}</strong> {' — '} {"uso geral além de gráficos: IA, ciência, mineração."}
+          </li>
+        </ul>
+        <h2>CPU vs GPU: Filosofias Diferentes</h2>
       <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-6 my-8">
         <div className="bg-card border border-border rounded-xl p-5">
           <h3 className="font-bold text-cyan-400 text-base mb-3">CPU — Latência</h3>

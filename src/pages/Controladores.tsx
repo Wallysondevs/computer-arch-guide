@@ -10,7 +10,28 @@ export default function Controladores() {
       difficulty="intermediario"
       timeToRead="12 min"
     >
-      <h2>O que é um Controlador?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Controlador"}</strong> {' — '} {"circuito que gerencia comunicação com periféricos."}
+          </li>
+        <li>
+            <strong>{"DMA"}</strong> {' — '} {"Direct Memory Access — periférico fala com RAM sem CPU."}
+          </li>
+        <li>
+            <strong>{"Interrupt controller"}</strong> {' — '} {"prioriza e roteia IRQs (APIC)."}
+          </li>
+        <li>
+            <strong>{"Memory controller"}</strong> {' — '} {"dentro do CPU moderno; gerencia DDR."}
+          </li>
+        <li>
+            <strong>{"I/O controller"}</strong> {' — '} {"antes era northbridge; hoje integrado."}
+          </li>
+        </ul>
+        <h2>O que é um Controlador?</h2>
       <p>
         Um controlador de hardware (device controller) é um circuito intermediário entre o barramento do sistema e o dispositivo físico. Ele traduz os comandos de alto nível do SO em sinais elétricos específicos do dispositivo, e vice-versa.
       </p>

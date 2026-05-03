@@ -10,7 +10,28 @@ export default function Superescalaridade() {
       difficulty="avancado"
       timeToRead="17 min"
     >
-      <h2>Além do Pipeline Simples</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Superescalar"}</strong> {' — '} {"executa múltiplas instruções por ciclo."}
+          </li>
+        <li>
+            <strong>{"Despacho"}</strong> {' — '} {"múltiplas unidades funcionais em paralelo."}
+          </li>
+        <li>
+            <strong>{"Out-of-order"}</strong> {' — '} {"executa fora da ordem do programa quando seguro."}
+          </li>
+        <li>
+            <strong>{"ILP"}</strong> {' — '} {"Instruction-Level Parallelism — explorado por superescalar."}
+          </li>
+        <li>
+            <strong>{"Reorder buffer"}</strong> {' — '} {"garante que retiros sejam em ordem."}
+          </li>
+        </ul>
+        <h2>Além do Pipeline Simples</h2>
       <p>
         Um pipeline de 5 estágios ideal atinge CPI=1 (1 instrução por ciclo). Mas para superar esse limite, precisamos de duas técnicas poderosas: <strong>superescalaridade</strong> (múltiplas instruções por ciclo) e <strong>execução fora de ordem — OoO</strong> (reordenar instruções para minimizar hazards).
       </p>

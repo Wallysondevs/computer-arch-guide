@@ -10,7 +10,28 @@ export default function SegurancaHW() {
       difficulty="avancado"
       timeToRead="15 min"
     >
-      <h2>Por que Segurança de Hardware Importa?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Spectre/Meltdown"}</strong> {' — '} {"exploits de execução especulativa."}
+          </li>
+        <li>
+            <strong>{"TPM"}</strong> {' — '} {"Trusted Platform Module — chip cripto + atestação."}
+          </li>
+        <li>
+            <strong>{"Secure Boot"}</strong> {' — '} {"só carrega bootloader assinado."}
+          </li>
+        <li>
+            <strong>{"SGX/TrustZone"}</strong> {' — '} {"enclaves seguros dentro do CPU."}
+          </li>
+        <li>
+            <strong>{"Side channels"}</strong> {' — '} {"vazamentos via timing, energia, eletromagnético."}
+          </li>
+        </ul>
+        <h2>Por que Segurança de Hardware Importa?</h2>
       <p>
         Vulnerabilidades de hardware são as mais difíceis de corrigir — patches de software podem mitigar, mas muitas vezes com custo de performance significativo, e a vulnerabilidade permanece no silício para sempre. Pior: ataques de hardware bypassam todas as proteções do SO e hypervisor.
       </p>

@@ -10,7 +10,28 @@ export default function InterrupcoesDMA() {
       difficulty="intermediario"
       timeToRead="14 min"
     >
-      <h2>O Mecanismo de Interrupção</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"IRQ"}</strong> {' — '} {"Interrupt Request — sinaliza evento ao CPU."}
+          </li>
+        <li>
+            <strong>{"ISR"}</strong> {' — '} {"Interrupt Service Routine — handler executado."}
+          </li>
+        <li>
+            <strong>{"Polling"}</strong> {' — '} {"CPU verifica periodicamente — desperdiça ciclos."}
+          </li>
+        <li>
+            <strong>{"DMA"}</strong> {' — '} {"periférico transfere dados pra RAM sem envolver CPU."}
+          </li>
+        <li>
+            <strong>{"Vantagem"}</strong> {' — '} {"CPU livre para outras tarefas durante I/O."}
+          </li>
+        </ul>
+        <h2>O Mecanismo de Interrupção</h2>
       <p>
         Uma interrupção é um sinal elétrico que faz a CPU pausar o que está fazendo, salvar o estado atual, e executar um tratador específico (ISR — Interrupt Service Routine). Após o tratamento, a CPU retoma a execução de onde parou.
       </p>

@@ -10,7 +10,28 @@ export default function Cache() {
       difficulty="intermediario"
       timeToRead="18 min"
     >
-      <h2>O que é Cache?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Cache"}</strong> {' — '} {"memória pequena e rápida próxima ao CPU."}
+          </li>
+        <li>
+            <strong>{"L1/L2/L3"}</strong> {' — '} {"níveis hierárquicos — L1 mais rápido e menor."}
+          </li>
+        <li>
+            <strong>{"Hit/Miss"}</strong> {' — '} {"dado encontrado / não encontrado no cache."}
+          </li>
+        <li>
+            <strong>{"Cache line"}</strong> {' — '} {"unidade de transferência (geralmente 64 bytes)."}
+          </li>
+        <li>
+            <strong>{"Coerência"}</strong> {' — '} {"protocolos como MESI mantêm caches consistentes em multicore."}
+          </li>
+        </ul>
+        <h2>O que é Cache?</h2>
       <p>
         Cache é uma memória SRAM de alta velocidade que armazena cópias de dados e instruções frequentemente usados da DRAM. Quando a CPU precisa de um dado, verifica primeiro o cache — se encontrar (<strong>hit</strong>), usa imediatamente; se não (<strong>miss</strong>), busca da memória principal.
       </p>

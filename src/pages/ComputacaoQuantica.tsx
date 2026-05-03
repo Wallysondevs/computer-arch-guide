@@ -10,7 +10,28 @@ export default function ComputacaoQuantica() {
       difficulty="avancado"
       timeToRead="15 min"
     >
-      <h2>Classical vs Quantum</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Qubit"}</strong> {' — '} {"unidade quântica — pode ser 0, 1 ou superposição."}
+          </li>
+        <li>
+            <strong>{"Superposição"}</strong> {' — '} {"qubit em múltiplos estados simultaneamente."}
+          </li>
+        <li>
+            <strong>{"Emaranhamento"}</strong> {' — '} {"qubits correlacionados a distância."}
+          </li>
+        <li>
+            <strong>{"Algoritmos"}</strong> {' — '} {"Shor (fatoração), Grover (busca) prometem aceleração."}
+          </li>
+        <li>
+            <strong>{"Estado da arte"}</strong> {' — '} {"dezenas/centenas de qubits úteis; longe de uso geral."}
+          </li>
+        </ul>
+        <h2>Classical vs Quantum</h2>
       <p>
         Computadores clássicos operam com bits (0 ou 1). Computadores quânticos usam <strong>qubits</strong>, que exploram princípios da mecânica quântica para processar informação de formas que seriam impossíveis classicamente.
       </p>

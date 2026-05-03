@@ -10,7 +10,28 @@ export default function CircuitosCombinacionais() {
       difficulty="intermediario"
       timeToRead="14 min"
     >
-      <h2>O que são Circuitos Combinacionais?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Combinacional"}</strong> {' — '} {"saída depende só das entradas atuais (sem memória)."}
+          </li>
+        <li>
+            <strong>{"Multiplexer"}</strong> {' — '} {"seleciona uma de N entradas."}
+          </li>
+        <li>
+            <strong>{"Decoder"}</strong> {' — '} {"converte código binário em uma saída única ativa."}
+          </li>
+        <li>
+            <strong>{"Adder"}</strong> {' — '} {"soma binária — meio somador, somador completo."}
+          </li>
+        <li>
+            <strong>{"ALU"}</strong> {' — '} {"Arithmetic Logic Unit — coração do CPU."}
+          </li>
+        </ul>
+        <h2>O que são Circuitos Combinacionais?</h2>
       <p>
         Em circuitos combinacionais, a saída é uma função direta das entradas atuais — sem memória ou estado interno. Diferentemente dos circuitos sequenciais, não há realimentação. São implementados por redes de portas lógicas.
       </p>

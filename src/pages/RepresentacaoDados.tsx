@@ -10,7 +10,28 @@ export default function RepresentacaoDados() {
       difficulty="iniciante"
       timeToRead="15 min"
     >
-      <h2>Por que Binário?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Binário"}</strong> {' — '} {"base 2 — natural para circuitos digitais."}
+          </li>
+        <li>
+            <strong>{"Hexadecimal"}</strong> {' — '} {"base 16 — atalho para ler binário."}
+          </li>
+        <li>
+            <strong>{"Two's complement"}</strong> {' — '} {"representação padrão de inteiros com sinal."}
+          </li>
+        <li>
+            <strong>{"IEEE 754"}</strong> {' — '} {"padrão de ponto flutuante (float, double)."}
+          </li>
+        <li>
+            <strong>{"ASCII/Unicode"}</strong> {' — '} {"codificação de caracteres."}
+          </li>
+        </ul>
+        <h2>Por que Binário?</h2>
       <p>
         Computadores usam o sistema binário (base 2) porque transistores têm dois estados estáveis: ligado (1) e desligado (0). Tensões elétricas representam esses estados — tipicamente 0V para 0 e 3,3V ou 5V para 1.
       </p>

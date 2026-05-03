@@ -10,7 +10,28 @@ export default function Barramentos() {
       difficulty="intermediario"
       timeToRead="13 min"
     >
-      <h2>O que é um Barramento?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Bus"}</strong> {' — '} {"conjunto de linhas que conectam componentes."}
+          </li>
+        <li>
+            <strong>{"Largura"}</strong> {' — '} {"quantos bits por ciclo (16, 32, 64, 128)."}
+          </li>
+        <li>
+            <strong>{"PCIe"}</strong> {' — '} {"barramento serial de alta velocidade para GPU/SSD/placas."}
+          </li>
+        <li>
+            <strong>{"USB"}</strong> {' — '} {"universal serial bus para periféricos."}
+          </li>
+        <li>
+            <strong>{"Endereço/dado/controle"}</strong> {' — '} {"três tipos clássicos de linhas."}
+          </li>
+        </ul>
+        <h2>O que é um Barramento?</h2>
       <p>
         Um barramento é um sistema de comunicação compartilhado que transfere dados entre componentes. Os barramentos definem o protocolo físico (voltagem, timing), o protocolo lógico (formato de pacotes, camadas), e a topologia (como os dispositivos se conectam).
       </p>

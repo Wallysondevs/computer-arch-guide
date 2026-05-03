@@ -10,7 +10,28 @@ export default function CircuitosSequenciais() {
       difficulty="intermediario"
       timeToRead="14 min"
     >
-      <h2>O que são Circuitos Sequenciais?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Sequencial"}</strong> {' — '} {"tem memória — saída depende de entradas + estado."}
+          </li>
+        <li>
+            <strong>{"Flip-flop"}</strong> {' — '} {"elemento básico que armazena 1 bit."}
+          </li>
+        <li>
+            <strong>{"Latch"}</strong> {' — '} {"flip-flop sensível a nível, não a borda."}
+          </li>
+        <li>
+            <strong>{"Registrador"}</strong> {' — '} {"grupo de flip-flops armazenando palavra."}
+          </li>
+        <li>
+            <strong>{"Clock"}</strong> {' — '} {"sinal periódico que sincroniza mudanças de estado."}
+          </li>
+        </ul>
+        <h2>O que são Circuitos Sequenciais?</h2>
       <p>
         Ao contrário dos combinacionais, circuitos sequenciais têm <strong>memória</strong>: a saída depende não só das entradas atuais, mas também do estado interno (histórico de entradas anteriores). Isso é possível através de realimentação e elementos de armazenamento como flip-flops.
       </p>

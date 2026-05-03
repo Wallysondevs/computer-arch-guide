@@ -10,7 +10,28 @@ export default function ISA() {
       difficulty="intermediario"
       timeToRead="14 min"
     >
-      <h2>O que é uma ISA?</h2>
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"ISA"}</strong> {' — '} {"Instruction Set Architecture — contrato entre HW e SW."}
+          </li>
+        <li>
+            <strong>{"Opcodes"}</strong> {' — '} {"códigos das operações."}
+          </li>
+        <li>
+            <strong>{"Tipos"}</strong> {' — '} {"aritméticas, lógicas, branches, load/store, system."}
+          </li>
+        <li>
+            <strong>{"Endianness"}</strong> {' — '} {"little (Intel) ou big (ARM antigo) endian."}
+          </li>
+        <li>
+            <strong>{"Word size"}</strong> {' — '} {"tamanho nativo de operandos (32/64 bits)."}
+          </li>
+        </ul>
+        <h2>O que é uma ISA?</h2>
       <p>
         A <strong>ISA (Instruction Set Architecture)</strong> é a especificação formal de como o software pode controlar o hardware. Define: as instruções disponíveis, os registradores acessíveis, os tipos de dados, os modos de endereçamento, e como exceções são tratadas.
       </p>

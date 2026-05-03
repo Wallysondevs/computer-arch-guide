@@ -10,7 +10,28 @@ export default function Introducao() {
       difficulty="iniciante"
       timeToRead="10 min"
     >
-      <AlertBox type="info" title="O que você vai aprender">
+      <AlertBox type="info" title="Pré-requisitos">
+          Ler o capítulo "Introdução" e ter familiaridade básica com lógica binária.
+        </AlertBox>
+        <h2>Glossário rápido</h2>
+        <ul>
+          <li>
+            <strong>{"Arquitetura"}</strong> {' — '} {"design de alto nível: ISA, registradores, modos."}
+          </li>
+        <li>
+            <strong>{"Organização"}</strong> {' — '} {"implementação física: pipeline, cache, ALU."}
+          </li>
+        <li>
+            <strong>{"Von Neumann"}</strong> {' — '} {"programa e dados na mesma memória."}
+          </li>
+        <li>
+            <strong>{"Harvard"}</strong> {' — '} {"programa e dados em memórias separadas."}
+          </li>
+        <li>
+            <strong>{"Lei de Moore"}</strong> {' — '} {"transistores dobram a cada ~2 anos (em desaceleração)."}
+          </li>
+        </ul>
+        <AlertBox type="info" title="O que você vai aprender">
         Este guia cobre os fundamentos das arquiteturas de computadores, desde lógica digital básica até processadores modernos com IA, GPUs e computação quântica — tudo em Português Brasileiro.
       </AlertBox>
 
